@@ -52,4 +52,4 @@ To find the values of a given pixel on the screen:
 ( xvalue + value * width) * 4
 
 
-All images from pexels.com
+### All images from pexels.com
