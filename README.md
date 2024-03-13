@@ -49,6 +49,11 @@ Pixels are stored in an array
 4 elements in the array for each pixel ( RGBA)
 
 To find the values of a given pixel on the screen:
+
+
+All images from pexels.com
+
+
 ( xvalue + value * width) * 4
 
 
