@@ -1,18 +1,16 @@
 # Workshop-3
 
-Create folder on left - drag and drop images into folder
-Create variable for each image
-Use preLoad function to load the images 
+- Create folder on left - drag and drop images into folder
+- Create variable for each image
+- Use preLoad function to load the images 
+    - filter(), tint() to manipulate images 
 
-filter(), tint() to manipulate images 
-
-###Arrays
-Can have multiple things under one variable — use [ ] 
-Indexes start at 0 ( 0, 1, 2, 3…..)
-Can use random variable- takes a random image from the array.
+### Arrays
+- Can have multiple things under one variable — use [ ] 
+- Indexes start at 0 ( 0, 1, 2, 3…..)
+- Can use random variable- takes a random image from the array.
 Famerate – in setup
-(how many times the draw loop runs per second)
-
+-- (how many times the draw loop runs per second)
 
 
 Let ____ = [ 30, 70, 60, 50];
@@ -25,7 +23,7 @@ Let __;
 Let __;
 Let __;
 
-##EXAMPLE
+## EXAMPLE
 
 Let imgs = [ ];
 Let __,__,__;
