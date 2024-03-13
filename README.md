@@ -41,7 +41,7 @@ Repeat with other images
 image(imgs[ index ], xpos, ypos);
 
 
-##PIXELS
+## PIXELS
 
 (in setup) → pixelDensity (1);
 
