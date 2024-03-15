@@ -8,11 +8,9 @@ let car, fab, lem, mon;
 let mot, patt, sea; 
 let sign, sky, wall, win;
 
+let counter = 0
 
-  
- let counter = 0
-
-
+ 
 function preload(){
   arch = loadImage('images/arch.png');
   bike = loadImage('images/bike.png');
@@ -31,7 +29,9 @@ function preload(){
 }
 
 function setup() {
+
   createCanvas(400, 400);
+  background(220);
   frameRate (1)
   imgs.push(arch);
   imgs.push(bike);
@@ -46,11 +46,6 @@ function setup() {
   imgs3.push(sky);
   imgs3.push(wall);
   imgs3.push(win);
-  
-}
-
-function draw() {
-  background(220);
 
   let r = random(imgs);
   let a = random (imgs1);
@@ -62,69 +57,28 @@ function draw() {
   image(n, 0, 200, 200, 200);
   image(d, 200, 0, 200, 200);
 
-
-    counter ++;
-   
-
-     if ( counter > 3 ){
-      d.loadPixels();
-  
-      for (let y = 0; y < d.height; y++){
-        for(let x = 0; x < d.width/ 2; x++){
-          let index = (x + y * d.width) * 4;
-          a.pixels[index] = 255 
-          d.pixels[index + 1] = 0
-          d.pixels[index + 2] = 150
-          d.pixels[index + 3] = 255
-        }
-       }
-        d.updatePixels();
-     }
-
-  //   r.loadPixels();
-  
-  // for (let y = 0; y < r.height; y++){
-  //   for(let x = 0; x < r.width/4; x++){
-  //     let index = (x + y * r.width) * 4;
-  //    // r.pixels[index] = 255 
-  //     //r.pixels[index + 1] = 0
-  //     r.pixels[index + 2] = 0
-  //     r.pixels[index + 3] = 255
-  //   }
-  //  }
-  //   r.updatePixels();
-
-
-  //   a.loadPixels();
-  
-  //   for (let y = 0; y < a.height/2; y++){
-  //     for(let x = 0; x < a.width/3; x++){
-  //       let index = (x + y * a.width) * 4;
-  //       //a.pixels[index] = 255 
-  //       a.pixels[index + 1] = 150
-  //       a.pixels[index + 2] = 0
-  //       a.pixels[index + 3] = 255
-  //     }
-  //    }
-  //     a.updatePixels();
-
-  //     n.loadPixels();
-  
-  //   for (let y = 0; y < n.height/3; y++){
-  //     for(let x = 0; x < n.width; x++){
-  //       let index = (x + y * n.width) * 4;
-  //       a.pixels[index] = 255 
-  //       //n.pixels[index + 1] = 150
-  //       n.pixels[index + 2] = 0
-  //       n.pixels[index + 3] = 255
-  //     }
-  //    }
-  //     n.updatePixels();
-
-      
-  
-
-
-
 }
 
+function draw() {
+ 
+  counter ++;
+
+  if (counter > 3){
+    filter(BLUR, 1);
+  }
+
+if (counter > 5){
+  let x = random (lem.width)
+  let y = random (lem.height)
+  let c = lem.get(int(x), int(y))
+  fill(c)
+  noStroke()
+  rect(x, y, 20, 20)
+  
+}
+  
+if (counter > 6){
+  frameRate (50)
+  
+}
+}
