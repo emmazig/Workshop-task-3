@@ -9,7 +9,7 @@
 - Can have multiple things under one variable — use [ ] 
 - Indexes start at 0 ( 0, 1, 2, 3…..)
 - Can use random variable- takes a random image from the array. - (put in setup)
-Famerate – in setup
+- Frame rate – in setup
 -- (how many times the draw loop runs per second)
   
 
