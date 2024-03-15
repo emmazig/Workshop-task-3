@@ -1,7 +1,6 @@
 # Workshop-3
 
-this is the URL -- 
-
+this is the URL -- [](https://emmazig.github.io/Workshop-3/)
 - Create folder on left - drag and drop images into folder
 - Create variable for each image
 - Use preLoad function to load the images 
