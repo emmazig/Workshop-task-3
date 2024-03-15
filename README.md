@@ -8,10 +8,10 @@
 ### Arrays
 - Can have multiple things under one variable — use [ ] 
 - Indexes start at 0 ( 0, 1, 2, 3…..)
-- Can use random variable- takes a random image from the array.
+- Can use random variable- takes a random image from the array. - (put in setup)
 Famerate – in setup
 -- (how many times the draw loop runs per second)
-
+  
 
 Let ____ = [ 30, 70, 60, 50];
 rect( 100, 100, ____[2], 100);
